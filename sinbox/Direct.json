@@ -6,12 +6,14 @@
       "domain": [
         "weixinsxy.com",
         "wxapp.tc.qq.com"
+        "anime.girigirilove.com"
       ]
     },
     {
       "domain_suffix": [
         ".weixinsxy.com",
-        ".wxapp.tc.qq.com"
+        ".wxapp.tc.qq.com",
+        ".girigirilove.com"
       ]
     },
     {
