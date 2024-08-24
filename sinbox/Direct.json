@@ -1,11 +1,10 @@
-
 {
   "version": 1,
   "rules": [
     {
       "domain": [
         "weixinsxy.com",
-        "wxapp.tc.qq.com"
+        "wxapp.tc.qq.com",
         "anime.girigirilove.com"
       ]
     },
@@ -30,4 +29,3 @@
     }
   ]
 }
-
