@@ -5,14 +5,16 @@
       "domain": [
         "weixinsxy.com",
         "wxapp.tc.qq.com",
-        "anime.girigirilove.com"
+        "anime.girigirilove.com",
+        "docker.chenby.cn"
       ]
     },
     {
       "domain_suffix": [
         ".weixinsxy.com",
         ".wxapp.tc.qq.com",
-        ".girigirilove.com"
+        ".girigirilove.com",
+        ".chenby.cn"
       ]
     },
     {
