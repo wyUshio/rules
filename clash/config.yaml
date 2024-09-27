@@ -148,8 +148,8 @@ proxy-groups:
   - {name: 🪟 Microsoft, <<: *pr}
   - {name: 🎵 TikTok, <<: *pr}
   - {name: 📲 Telegram, <<: *pr}
-  - {name: 🎥 NETFLIX, <<: *pr}
-  - {name: 🎬DisneyPlus, <<: *pr}
+  - {name: 🎥 NETFLIX, type: select, proxies: [🇸🇬 新加坡节点, 🇭🇰 香港节点, 🇹🇼 台湾节点]}
+  - {name: 🎬DisneyPlus, type: select, proxies: [🇸🇬 新加坡节点, 🇭🇰 香港节点, 🇹🇼 台湾节点]}
   - {name: ✈️ Speedtest, <<: *pr}
   - {name: 💶 PayPal, <<: *pr}
   - {name: 🍎 Apple, type: select, proxies: [🟢 直连, 🚀 节点选择]}
