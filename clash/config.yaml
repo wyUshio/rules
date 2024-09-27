@@ -1,9 +1,9 @@
 # 锚点
-pr: &pr {type: select, proxies: [🚀 节点选择, ♻️ 自动选择, 🇭🇰 香港节点, 🇯🇵 日本节点, 🇺🇲 美国节点, 🌐 全部节点, 🔗 链式代理,  🟢 直连]}
+pr: &pr {type: select, proxies: [🚀 节点选择, ♻️ 自动选择, 🇺🇲 美国节点, 🇯🇵 日本节点, 🇰🇷 韩国节点, 🇸🇬 新加坡节点, 🇭🇰 香港节点, 🇹🇼 台湾节点, 🌐 全部节点, 🔗 链式代理,  🟢 直连]}
 
 # 机场订阅，名称不能重复
 proxy-providers:
-  Airport_01:
+  Airport:
     type: http
     interval: 1800
     health-check:
@@ -11,7 +11,7 @@ proxy-providers:
       url: https://www.gstatic.com/generate_204
       interval: 300
     proxy: 🟢 直连
-    url: "订阅链接"
+    url: "订阅地址"
     override:
       skip-cert-verify: true
       udp: true
@@ -20,7 +20,10 @@ proxy-providers:
 
 # 用于下载订阅时指定UA
 global-ua: clash.meta
-    
+
+# 用于下载订阅时指定UA
+global-ua: clash.meta
+
 # 全局配置
 port: 7890
 socks-port: 7891
@@ -34,7 +37,7 @@ tcp-concurrent: true
 # interface-name: eth0  （路由器下根据情况指定出站接口）
 authentication:
   - name:passwd
-  
+
 geodata-mode: false
 # GEO 文件加载模式（standard：标准加载器/memconservative：专为内存受限 (小内存) 设备优化的加载器 (默认值)）
 geodata-loader: standard
@@ -45,7 +48,7 @@ geox-url:
   mmdb: "https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geoip-lite.metadb"
   geoip: "https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geoip-lite.dat"
   asn: "https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/GeoLite2-ASN.mmdb"
-  
+
 # 控制面板
 external-controller: 0.0.0.0:9090
 secret: ""
@@ -63,7 +66,7 @@ keep-alive-interval: 30
 profile:
   store-selected: true
   store-fake-ip: true
-  
+
 # 流量嗅探
 sniffer:
   enable: true
@@ -82,7 +85,7 @@ sniffer:
     - "dlg.io.mi.com"
     - "+.push.apple.com"
     - "+.apple.com"
-    
+
 # 代理模式
 tun:
   enable: true
@@ -94,7 +97,7 @@ tun:
   auto-route: true
   auto-redirect: true
   auto-detect-interface: true
-  
+
 # DNS模块
 dns:
   enable: true
@@ -136,7 +139,7 @@ proxies:
 
 # 策略组
 proxy-groups:
-  - {name: 🚀 节点选择, type: select, proxies: [♻️ 自动选择, 🇺🇲 美国节点, 🇯🇵 日本节点, 🇰🇷 韩国节点, 🇸🇬 新加坡节点, 🇭🇰 香港节点, 🇹🇼 台湾节点 🌐 全部节点, 🟢 直连]}
+  - {name: 🚀 节点选择, type: select, proxies: [♻️ 自动选择, 🇺🇲 美国节点, 🇯🇵 日本节点, 🇰🇷 韩国节点, 🇸🇬 新加坡节点, 🇭🇰 香港节点, 🇹🇼 台湾节点, 🌐 全部节点, 🔗 链式代理, 🟢 直连]}
   - {name: 📹 YouTube, <<: *pr}
   - {name: 🍀 Google, <<: *pr}
   - {name: 🤖 ChatGPT, <<: *pr}
@@ -181,7 +184,7 @@ rules:
   - RULE-SET,geolocation-!cn,🚀 节点选择
   - RULE-SET,cn_domain,🎯 全球直连
   - RULE-SET,google_ip,🍀 Google,no-resolve
-  - RULE-SET,netflix_ip,🎥 NETFLIX,no-resolve,no-resolve
+  - RULE-SET,netflix_ip,🎥 NETFLIX,no-resolve
   - RULE-SET,telegram_ip,📲 Telegram,no-resolve
   - RULE-SET,cn_ip,🎯 全球直连
   - MATCH,🚀 节点选择
@@ -211,7 +214,7 @@ rule-providers:
   gfw_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/gfw.mrs" }
   geolocation-!cn: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/geolocation-!cn.mrs" }
   cn_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/cn.mrs" }
-  
+
   cn_ip: { <<: *ip, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/cn.mrs" }
   google_ip: { <<: *ip, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/google.mrs" }
   telegram_ip: { <<: *ip, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/telegram.mrs" }
