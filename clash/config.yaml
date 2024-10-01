@@ -124,13 +124,14 @@ dns:
   nameserver:
     - 223.5.5.5
     - 119.29.29.29
-  nameserver-policy:
-    "rule-set:private_domain,cn_domain":
-    - 223.5.5.5
-    - 119.29.29.29
-    "rule-set:geolocation-!cn":
-      - "https://dns.cloudflare.com/dns-query"
-      - "https://dns.google/dns-query"
+  #redirhost模式下用
+  #nameserver-policy:
+  #  "rule-set:private_domain,cn_domain":
+  #  - 223.5.5.5
+  #  - 119.29.29.29
+  #  "rule-set:geolocation-!cn":
+  #    - "https://dns.cloudflare.com/dns-query"
+  #    - "https://dns.google/dns-query"
 
 proxies:
 - name: "🟢 直连"
