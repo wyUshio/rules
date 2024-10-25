@@ -5,14 +5,12 @@
 DOMAIN-SUFFIX,time.windows.com
 DOMAIN-SUFFIX,lanzov.com
 DOMAIN-SUFFIX,hao123.com
-DOMAIN-SUFFIX,girigirilove.com
 
 # 域名关键字匹配
 DOMAIN-KEYWORD,mirror
 
 # IP段匹配
 IP-CIDR,219.146.1.66/32,no-resolve
-
 
 # 360
 DOMAIN-SUFFIX,360.com
@@ -23,7 +21,6 @@ DOMAIN-SUFFIX,qhres.com
 DOMAIN-SUFFIX,qhstatic.com
 DOMAIN-SUFFIX,qhupdate.com
 DOMAIN-SUFFIX,so.com
-
 
 # 58
 DOMAIN-SUFFIX,58.com
