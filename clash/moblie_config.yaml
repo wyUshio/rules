@@ -189,12 +189,12 @@ rule-providers:
   proxylite:
     <<: *qcy
     url: "https://raw.githubusercontent.com/wyUshio/rules/refs/heads/main/clash/ProxyLite.list"
+  ai:
+    <<: *qcy
+    url: "https://raw.githubusercontent.com/qichiyuhub/rule/refs/heads/master/AI.list"
   google_domain:
     <<: *domain
     url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/google.mrs"
-  ai:
-    <<: *domain
-    url: "https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geoip/ai.mrs"
   github_domain:
     <<: *domain
     url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/github.mrs"
