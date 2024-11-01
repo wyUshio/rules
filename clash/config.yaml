@@ -23,12 +23,8 @@ ipv6: false
 allow-lan: true
 unified-delay: true
 tcp-concurrent: true
-# interface-name: eth0  （路由器下根据情况指定出站接口）
-authentication:
-  - name:passwd
 
 geodata-mode: false
-# GEO 文件加载模式（standard：标准加载器/memconservative：专为内存受限 (小内存) 设备优化的加载器 (默认值)）
 geodata-loader: standard
 geo-auto-update: true
 geo-update-interval: 48
@@ -43,7 +39,6 @@ external-controller: 0.0.0.0:9090
 secret: ""
 external-ui: ui
 external-ui-url: "https://ghp.ci/https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip"
-# 下载面板地址可更换：https://mirror.ghproxy.com/https://github.com/MetaCubeX/Yacd-meta/archive/gh-pages.zip
 
 # 匹配进程 always/strict/off
 find-process-mode: strict
@@ -113,14 +108,13 @@ dns:
   nameserver:
     - 223.5.5.5
     - 119.29.29.29
-  #redirhost模式下用
-  #nameserver-policy:
-  #  "rule-set:private_domain,cn_domain":
-  #  - 223.5.5.5
-  #  - 119.29.29.29
-  #  "rule-set:geolocation-!cn":
-  #    - "https://dns.cloudflare.com/dns-query"
-  #    - "https://dns.google/dns-query"
+  nameserver-policy:
+    "rule-set:private_domain,cn_domain":
+    - 223.5.5.5
+    - 119.29.29.29
+    "rule-set:geolocation-!cn":
+      - "https://dns.cloudflare.com/dns-query"
+      - "https://dns.google/dns-query"
 
 proxies:
 - name: "🟢 直连"
