@@ -8,7 +8,7 @@ proxy-providers:
       url: https://www.gstatic.com/generate_204
       interval: 300
     proxy: 🟢 直连
-    url: "https://sizuku.stream/api/v1/client/subscribe?token=01011b5ead691ac48407ef6c01d215df"
+    url: "订阅链接"
 
 # 用于下载订阅时指定UA
 global-ua: clash.meta
