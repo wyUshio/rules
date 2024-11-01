@@ -149,7 +149,6 @@ proxy-groups:
   - {name: ✈️ Speedtest, <<: *pr}
   - {name: 💶 PayPal, <<: *pr}
   - {name: 🍎 Apple, type: select, proxies: [🟢 直连, 🚀 节点选择]}
-  - {name: 🔗 链式代理, type: relay, proxies: [🇺🇲 美国节点]}
   - {name: 🎯 全球直连, type: select, proxies: [🟢 直连, 🚀 节点选择]}
   - {name: 🐟 漏网之鱼, <<: *pr}
   - {name: 🇺🇲 美国节点, type: select, include-all: true, filter: "(?i)美|us|unitedstates|united states"}
