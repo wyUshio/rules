@@ -9,9 +9,6 @@ proxy-providers:
       interval: 300
     proxy: 🟢 直连
     url: "订阅地址"
-    override:
-      skip-cert-verify: true
-      udp: true
 
 # 用于下载订阅时指定UA
 global-ua: clash.meta
