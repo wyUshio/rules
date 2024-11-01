@@ -128,11 +128,11 @@ proxies:
   udp: true
 
 # 锚点
-pr: &pr {type: select, proxies: [🚀 节点选择, ♻️ 自动选择, 🇺🇲 美国节点, 🇯🇵 日本节点, 🇰🇷 韩国节点, 🇸🇬 新加坡节点, 🇭🇰 香港节点, 🇹🇼 台湾节点, 🌐 全部节点, 🔗 链式代理,  🟢 直连]}
+pr: &pr {type: select, proxies: [🚀 节点选择, ♻️ 自动选择, 🇺🇲 美国节点, 🇯🇵 日本节点, 🇰🇷 韩国节点, 🇸🇬 新加坡节点, 🇭🇰 香港节点, 🇹🇼 台湾节点, 🌐 全部节点, 🐟 漏网之鱼,  🟢 直连]}
 
 # 策略组
 proxy-groups:
-  - {name: 🚀 节点选择, type: select, proxies: [♻️ 自动选择, 🇺🇲 美国节点, 🇯🇵 日本节点, 🇰🇷 韩国节点, 🇸🇬 新加坡节点, 🇭🇰 香港节点, 🇹🇼 台湾节点, 🌐 全部节点, 🔗 链式代理, 🟢 直连]}
+  - {name: 🚀 节点选择, type: select, proxies: [♻️ 自动选择, 🇺🇲 美国节点, 🇯🇵 日本节点, 🇰🇷 韩国节点, 🇸🇬 新加坡节点, 🇭🇰 香港节点, 🇹🇼 台湾节点, 🌐 全部节点, 🐟 漏网之鱼, 🟢 直连]}
   - {name: 📹 YouTube, <<: *pr}
   - {name: 🍀 Google, <<: *pr}
   - {name: 🤖 ChatGPT, <<: *pr}
@@ -160,7 +160,6 @@ rules:
   - RULE-SET,private_domain,🟢 直连
   - RULE-SET,direct1,🟢 直连
   - RULE-SET,apple_domain,🍎 Apple
-  - RULE-SET,free,🔗 链式代理
   - RULE-SET,proxylite,🚀 节点选择
   - RULE-SET,ai,🤖 ChatGPT
   - RULE-SET,github_domain,👨🏿‍💻 GitHub
