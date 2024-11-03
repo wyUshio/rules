@@ -1,6 +1,9 @@
-+.qichiyu.com
-+.guguwangluo.win
-+.yattazen.com
-+.apphot.cc
-+.browserleaks.com
-+.firefox.com
+# 走代理补充
+
+# MyList
+# 域名后缀匹配
+DOMAIN-SUFFIX,guguwangluo.win
+DOMAIN-SUFFIX,yattazen.com
+DOMAIN-SUFFIX,apphot.cc
+DOMAIN-SUFFIX,browserleaks.com
+DOMAIN-SUFFIX,firefox.com
