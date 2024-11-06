@@ -1,10 +1,23 @@
 # 走代理补充 MyList
 
-DOMAIN-KEYWORD,18comic
-
 # 域名后缀匹配
 DOMAIN-SUFFIX,guguwangluo.win
 DOMAIN-SUFFIX,yattazen.com
 DOMAIN-SUFFIX,apphot.cc
 DOMAIN-SUFFIX,browserleaks.com
 DOMAIN-SUFFIX,firefox.com
+DOMAIN-SUFFIX,18comic-god.cc
+DOMAIN-SUFFIX,18comic-god.club
+DOMAIN-SUFFIX,18comic-god.xyz
+DOMAIN-SUFFIX,18comic.cc
+DOMAIN-SUFFIX,18comic.company
+DOMAIN-SUFFIX,18comic.org
+DOMAIN-SUFFIX,18comic.vip
+DOMAIN-SUFFIX,jmcomic.ltd
+DOMAIN-SUFFIX,jmcomic.me
+DOMAIN-SUFFIX,jmcomic.mobi
+DOMAIN-SUFFIX,jmcomic.moe
+DOMAIN-SUFFIX,jmcomic1.city
+DOMAIN-SUFFIX,jmcomic1.me
+DOMAIN-SUFFIX,jmcomic1.mobi
+DOMAIN-SUFFIX,jmcomic2.moe
