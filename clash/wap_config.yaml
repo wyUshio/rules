@@ -98,6 +98,9 @@ dns:
       - https://223.5.5.5/dns-query
 
 proxies:
+  - name: "DNS_Hijack"
+    type: dns
+
  #14.215.182.75 180.101.50.208 180.101.50.249   
   - name: "🔴 彩信直连"
     type: http
